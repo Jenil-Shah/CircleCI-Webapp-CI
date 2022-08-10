@@ -49,7 +49,7 @@ jobs:
           git config user.name "Jenil-Shah"
           git add .
           git commit -m "Update via CircleCI"
-          # Push quietly to prevent showing the token in log
+          # Push quietly to prevent showing the token in log and you are good to go
           git push -q https://$GITHUB_PERSONAL_TOKEN@github.com/Jenil-Shah/CircleCI-Webapp-CD.git master
 
 workflows:
