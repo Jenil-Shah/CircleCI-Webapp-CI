@@ -2,13 +2,13 @@ version: 2.1
 jobs:
   Test:
     docker:
-      - image: cimg/go:1.13
+      - image: cimg/go:1.19
     steps:
       - checkout
       - run: go test -v ./...
   Build:
     docker:
-      - image: cimg/go:1.13
+      - image: cimg/go:1.19
     steps:
       - checkout
       - run: go get -v -t -d ./...
@@ -20,7 +20,7 @@ jobs:
             - ./deployment.yaml
   Publish:
     docker:
-      - image: cimg/go:1.13
+      - image: cimg/go:1.19
     steps:
       - checkout
       - setup_remote_docker
