@@ -1,2 +1,3 @@
 Hello This is our CI/CD Pipeline
 We are good to Go
+The technologies used are Kubernetes, Gitops tools like CircleCI and ArgoCD
