@@ -34,7 +34,7 @@ jobs:
           docker push $DOCKER_USERNAME/circleci-webappdemo:$TAG
   GenerateYAML:
     docker:
-      - image: cimg/base:2022.07
+      - image: cimg/base:2020.06
     steps:
       - attach_workspace:
           at: /tmp/workspace
@@ -48,9 +48,9 @@ jobs:
           git config user.email "jenilshah757@gmail.com"
           git config user.name "Jenil-Shah"
           git add .
-          git commit -m "Update via CircleCI UI"
+          git commit -m "Update via CircleCI UI Q"
           # Push quietly to prevent showing the token in log and you are good to go
-          git push -q https://$GITHUB_PERSONAL_TOKEN@github.com/David-VTUK/CircleCI-Webapp-CD.git master
+          git push -q https://$GITHUB_PERSONAL_TOKEN@github.com/Jenil-Shah/CircleCI-Webapp-CD.git master
 
 workflows:
   version: 2
