@@ -34,7 +34,7 @@ jobs:
           docker push $DOCKER_USERNAME/circleci-webappdemo:$TAG
   GenerateYAML:
     docker:
-      - image: cimg/base:2020.06
+      - image: cimg/base:2022.07
     steps:
       - attach_workspace:
           at: /tmp/workspace
