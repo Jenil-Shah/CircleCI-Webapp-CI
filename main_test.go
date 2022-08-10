@@ -10,7 +10,7 @@ func TestHelloWorld(t *testing.T) {
 	request, _ := http.NewRequest(http.MethodGet, "/", nil)
 	response := httptest.NewRecorder()
 
-	helloWorld(response, request)
+	helloWorlds(response, request)
 	got := response.Body.String()
 	want := "Test CI Webserver 3"
 
