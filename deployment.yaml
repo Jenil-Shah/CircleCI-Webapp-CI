@@ -36,6 +36,6 @@ spec:
     spec:
       containers:
       - name: webapp-demo
-        image: virtualthoughts/circleci-webappdemo:$TAG
+        image: jenilshah757/circleci-webappdemo:$TAG
         ports:
         - containerPort: 80
