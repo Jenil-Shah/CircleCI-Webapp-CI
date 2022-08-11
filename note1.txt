@@ -1,2 +1,0 @@
-CI/CD
-CircleCI and ArgoCD
